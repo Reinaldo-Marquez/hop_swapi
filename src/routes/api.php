@@ -3,6 +3,8 @@
 // use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StarshipController;
+use App\Http\Controllers\VehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +18,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Attributes:
-
-// films -- The URL root for Film resources
-// people -- The URL root for People resources
-// planets -- The URL root for Planet resources
-// species -- The URL root for Species resources
 // starships -- The URL root for Starships resources
 // vehicles -- The URL root for Vehicles resources
 
@@ -28,3 +25,6 @@ use Illuminate\Support\Facades\Route;
 //     $response = Http::get('http://swapi.dev/api/' . $attribute);
 //     return $response;
 // });
+
+Route::resource('starships',StarshipController::class);
+Route::resource('vehicles',VehicleController::class);
