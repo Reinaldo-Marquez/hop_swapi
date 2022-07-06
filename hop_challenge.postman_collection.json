@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "3071f6a8-94bb-4a5b-a851-2b5fd26a123f",
+		"name": "hop_challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16621424"
+	},
+	"item": [
+		{
+			"name": "starship",
+			"item": [
+				{
+					"name": "Listar todas las naves",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"deat\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/starships",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"starships"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear una nave",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Death Star 2\",\r\n  \"model\": \"DS-1 Orbital Battle Station\",\r\n  \"manufacturer\": \"Imperial Department of Military Research, Sienar Fleet Systems\",\r\n  \"cost_in_credits\": \"1000000000000\",\r\n  \"length\": \"120000\",\r\n  \"max_atmosphering_speed\": \"n/a\",\r\n  \"crew\": \"342,953\",\r\n  \"passengers\": \"843,342\",\r\n  \"cargo_capacity\": \"1000000000000\",\r\n  \"consumables\": \"3 years\",\r\n  \"hyperdrive_rating\": \"4.0\",\r\n  \"MGLT\": \"10\",\r\n  \"starship_class\": \"Deep Space Mobile Battlestation\",\r\n  \"pilots\": [],\r\n  \"films\": [\r\n      \"https://swapi.dev/api/films/1/\"\r\n  ],\r\n  \"url\": \"https://swapi.dev/api/starships/9/\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/starships",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"starships"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar una nave",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"model\": \"DS-1 Orbital Battle Station\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/starships/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"starships",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una nave",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/starships/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"starships",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vehicle",
+			"item": [
+				{
+					"name": "Listar todos las vehiculos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"san\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un vehiculo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sand Crawler\",\r\n    \"model\": \"Digger Crawler\",\r\n    \"manufacturer\": \"Corellia Mining Corporation\",\r\n    \"cost_in_credits\": \"150000\",\r\n    \"length\": \"36.8 \",\r\n    \"max_atmosphering_speed\": \"30\",\r\n    \"crew\": \"46\",\r\n    \"passengers\": \"30\",\r\n    \"cargo_capacity\": \"50000\",\r\n    \"consumables\": \"2 months\",\r\n    \"vehicle_class\": \"wheeled\",\r\n    \"pilots\": [],\r\n    \"films\": [\r\n        \"https://swapi.dev/api/films/1/\",\r\n        \"https://swapi.dev/api/films/5/\"\r\n    ],\r\n    \"url\": \"https://swapi.dev/api/vehicles/4/\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un vehiculo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"test\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un vehiculo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
