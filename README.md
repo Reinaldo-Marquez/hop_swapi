@@ -76,3 +76,5 @@ d) Eliminar starship / vehicles (DELETE):
   Para correr los test funcionales correremos el comando "docker-compose exec php php /var/www/html/./vendor/bin/phpunit":
   
   docker-compose exec php php /var/www/html/./vendor/bin/phpunit
+
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/49925569/177457870-ca9d1aae-c346-489c-a548-397e2b3b8eff.png">
