@@ -1,0 +1,16 @@
+Run docker:
+
+ docker-compose up -d
+
+Stop docker:
+
+ docker-compose down
+
+Ejecutar tests:
+
+ docker-compose exec php php /var/www/html/./vendor/bin/phpunit
+
+Ruta principal para usar artisan:
+
+ docker-compose exec php php /var/www/html/artisan (AQUI TODO LO DEMAS)
+
