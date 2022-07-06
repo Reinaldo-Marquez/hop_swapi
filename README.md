@@ -70,3 +70,9 @@ c) Actualizar Starship / vehicles (PUT):
 d) Eliminar starship / vehicles (DELETE):
 
   Con este metodo podremos borrar los datos de cualquier nave ingresada.
+  
+# Test funcionales:
+
+  Para correr los test funcionales correremos el comando "docker-compose exec php php /var/www/html/./vendor/bin/phpunit":
+  
+  docker-compose exec php php /var/www/html/./vendor/bin/phpunit
