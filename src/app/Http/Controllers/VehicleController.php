@@ -44,7 +44,7 @@ class VehicleController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response

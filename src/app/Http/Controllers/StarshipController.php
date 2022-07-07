@@ -44,7 +44,7 @@ class StarshipController extends Controller
     }
 
     /**
-     * Create a new resource.
+     * Create a new resource in storage.
      *
      * @return \Illuminate\Http\Response
      */
