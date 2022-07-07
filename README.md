@@ -24,9 +24,15 @@ El siguiente proyecto se encuentra realizado en un entorno de DOCKER corriendo l
 
 a) Listar starships / vehicles (GET): 
 
-  Este metodo permite listar todos los elementos en la tabla y ademas posee un filtro con el cual podremos fintrar por el nombre de la nave que estemos requiriendo. Dicho parametro lo pasaremos a traves de la URL de la petición (no es "case sensitive" y puede realizar la busqueda solo con una parte del nombre), esto nos devolvera los elementos paginados (5 por pagina) y el total de elementos encontrados junto con el detalle de cada uno:
+  Este metodo permite listar todos los elementos en la tabla y ademas posee un filtro con el cual podremos filtrar por el nombre de la nave que estemos requiriendo. Dicho parametro lo pasaremos a traves de la URL de la petición (no es "case sensitive" y puede realizar la busqueda solo con una parte del nombre), esto nos devolvera los elementos paginados (5 por pagina) y el total de elementos encontrados junto con el detalle de cada uno:
   
  Ejemplo:
+ 
+ URL original para devolver todos los elementos:
+ 
+ http://localhost:8080/api/starships
+ 
+ URL con el parametro de busqueda:
  
  http://localhost:8080/api/starships?name=death
  
